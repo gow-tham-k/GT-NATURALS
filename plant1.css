@@ -1,0 +1,111 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+.seeds {
+            display: grid;
+            
+            
+            grid-template-columns: repeat(3, 1fr); 
+            
+            gap: 20px; 
+            
+            align-items: center;
+            justify-items: center;
+            
+            
+            text-align: center;
+        }
+
+        .seeds img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+.seed1 {
+            display: grid;
+            
+            
+            grid-template-columns: repeat(3, 1fr); 
+            
+            gap: 20px; 
+            
+            align-items: center;
+            justify-items: center;
+            
+            
+            text-align: center;
+        }
+
+        .seeds img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+
+}
+.seed2 {
+            display: grid;
+            
+            
+            grid-template-columns: repeat(3, 1fr); 
+            
+            gap: 20px; 
+            
+            align-items: center;
+            justify-items: center;
+            
+            
+            text-align: center;
+        }
+
+        .seeds img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+
+}
+.seed3  {
+            display: grid;
+            
+            
+            grid-template-columns: repeat(3, 1fr); 
+            
+            gap: 20px; 
+            
+            align-items: center;
+            justify-items: center;
+            
+            
+            text-align: center;
+        }
+
+        .seeds img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+
+}
+.head1{
+    height: 80px;
+    width: 100%;
+    background-color: green;
+    
+}
+.head1 nav a{
+    float: right;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: rgb(18, 11, 11);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 400px;
+    float: right;
+
+}

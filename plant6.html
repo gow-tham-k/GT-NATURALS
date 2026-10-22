@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>GT NATURALS - Beetroot Seeds</title>
+    <link rel="stylesheet" href="page6.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">GT NATURALS</div>
+        <ul>
+            <li><a href="plant.html">Home</a></li>
+            <li><a href="plant1.html">Plant</a></li>
+            <li><a href="plant2.html">Seed</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Product Section -->
+    <section class="product-container">
+
+        <!-- Left Side Image -->
+        <div class="product-image">
+            <img src="img/beetrooy.jpg"
+                 alt="Beetroot">
+
+            <h2>Seeds: Beetroot</h2>
+            <p class="price">Price: ₹199/-</p>
+        </div>
+
+        <!-- Right Side Form -->
+        <div class="product-details">
+
+            <h2>Order Now</h2>
+
+            <form id="orderForm">
+
+                <label>Gmail ID:</label>
+                <input type="email"
+                       id="email"
+                       placeholder="Enter your Gmail ID"
+                       required>
+
+                <label>Phone Number:</label>
+                <input type="tel"
+                       id="phone"
+                       placeholder="Enter phone number"
+                       pattern="[0-9]{10}"
+                       maxlength="10"
+                       required>
+
+                <label>Quantity:</label>
+                <div class="quantity">
+                    <button type="button"
+                            onclick="decrease()">-</button>
+
+                    <span id="quantity">1</span>
+
+                    <button type="button"
+                            onclick="increase()">+</button>
+                </div>
+
+                <label>Comment:</label>
+                <textarea id="comment"
+                    rows="4"
+                    placeholder="Enter your comment">
+                </textarea>
+
+                <button type="submit"
+                        class="submit-btn">
+                    Submit
+                </button>
+
+            </form>
+
+            <p id="message"></p>
+
+        </div>
+    </section>
+
+    <script>
+        let qty = 1;
+
+        function increase() {
+            qty++;
+            document.getElementById("quantity")
+                .innerText = qty;
+        }
+
+        function decrease() {
+            if (qty > 1) {
+                qty--;
+                document.getElementById("quantity")
+                    .innerText = qty;
+            }
+        }
+
+        document.getElementById("orderForm")
+            .addEventListener("submit", function(e) {
+
+            e.preventDefault();
+
+            let email =
+                document.getElementById("email").value;
+
+            let phone =
+                document.getElementById("phone").value;
+
+            let comment =
+                document.getElementById("comment").value;
+
+            document.getElementById("message")
+                .innerText =
+                "Order details entered successfully!";
+
+            alert(
+                "Email: " + email +
+                "\nPhone: " + phone +
+                "\nQuantity: " + qty +
+                "\nComment: " + comment
+            );
+        });
+    </script>
+
+</body>
+</html>
